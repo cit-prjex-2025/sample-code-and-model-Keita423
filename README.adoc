@@ -295,23 +295,59 @@ image::images/traslation_rule_guide.png[{full-width}]
 
 .クラスの候補（下記リストを書き換える）
 * main_task
+* os
+* touch_sensor
+* color_sensor
+* ultrasonic_sensor
 * motor
-* クラス候補のモノA
-* クラス候補のモノB
+* carrier
+* walldetector
+* tracer
+* bumper
+* linemon
+* driver
+* porter
 
 操作の候補（働き）の候補を列挙しなさい（候補でよい）。
 もし、クラスが決定できるなら、後のかっこ内に記載しておきなさい。
 
 .操作の候補（下記リストを書き換える）
 . set_poweer（motor）
-. 操作候補の働き1（クラス候補A）
-. 操作候補の働き2（クラス候補B）
+. config (motor)
+. stop (motor)
+. is_pressed (touch_sensor)
+. tslp_tsk (OS)
+. ext_tsk (OS)
+. is_loaded (carrier)
+. is_detected (walldetector)
+. tracer_run (tracer)
+. tracer_stop (tracer)
+. is_pushed (bumper)
+. is_online (linemon)
+. driver_turn_left (driver)
+. driver_turn_right (driver)
+. driver_stop (driver)
+. transport (porter)
+. get_refletc (color_sensor)
+. get_distance (ultrasonic_sensor)
 
 関連の候補（クラス間のつながり）を下記に列挙しなさい（候補でよい）
 
 .関連の候補（下記リストを書き換える）
-. main_task -> transporter
-. クラス候補 -> クラス候補
+. main_task → porter 
+. main_task → motor
+. main_task → OS
+. porter → walldetector
+. porter → carrier
+. porter → bumper
+. porter → tracer
+. walldetector → ultrasonic_sensor
+. carrier → touch_sensor
+. bumper → touch_sensor
+. tracer → driver
+. driver → motor
+. linemon → color_sensor
+
 
 ==== sample04のプロジェクトを作成する
 
