@@ -481,7 +481,7 @@ image::images/GSW-20191021-142110.png[{three-quarters-width}]
 作成したクラス図を `sample04_stm_01.png` として `images` ディレクトリに保存しなさい。
 
 .`sample04` のステートマシン図（保存できたら置き換わる）
-image::images/sample04_stms_01.png[{full-width}]
+image::images/sample04_stm_01.png[{full-width}]
 
 
 ==== 編集結果をコミットする
