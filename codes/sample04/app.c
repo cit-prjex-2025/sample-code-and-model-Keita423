@@ -126,6 +126,7 @@ void porter_transport(void) {
       tracer_stop();
     }
     break;
+    
   case P_ARRIVED:
     break;
   default:
